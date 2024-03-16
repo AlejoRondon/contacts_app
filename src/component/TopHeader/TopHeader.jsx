@@ -1,23 +1,20 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import './TopHeader.scss'
 function TopHeader() {
   return (
-    <div>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to='/'>Overview</Link>
-            </li>
-            <li>
-              <Link to='/contacts'>Contacts</Link>
-            </li>
-            <li>
-              <Link to='/favorites'>Favorites</Link>
-            </li>
-          </ul>
-        </nav>
+    // <header className='TopHeader'>
+    <nav className='TopHeader'>
+      <div className='navlink-wrapper'>
+        <NavLink to='/'>Overview</NavLink>
       </div>
-    </div>
+      <div className='navlink-wrapper'>
+        <NavLink to='/favorites'>Favorites</NavLink>
+      </div>
+      <div className='navlink-wrapper'>
+        <NavLink to='/contacts'>Contacts</NavLink>
+      </div>
+    </nav>
+    // </header>
   )
 }
 

@@ -1,0 +1,58 @@
+/* font imports & definitions */
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('/css/fonts/ProximaNova-Regular.eot');
+    src: url('/css/fonts/ProximaNova-Regular.woff2') format("woff2"), url('/css/fonts/ProximaNova-Regular.woff') format("woff"), url('/css/fonts/ProximaNova-Regular.ttf') format("truetype"), url('/css/fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format("svg"), url('/css/fonts/ProximaNova-Regular.eot?#iefix') format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ProximaNova-RegularIt';
+    src: url('/css/fonts/ProximaNova-RegularIt.eot');
+    src: url('/css/fonts/ProximaNova-RegularIt.woff2') format("woff2"), url('/css/fonts/ProximaNova-RegularIt.woff') format("woff"), url('/css/fonts/ProximaNova-RegularIt.ttf') format("truetype"), url('/css/fonts/ProximaNova-RegularIt.svg#ProximaNova-RegularIt') format("svg"), url('/css/fonts/ProximaNova-RegularIt.eot?#iefix') format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('/css/fonts/ProximaNova-Bold.eot');
+    src: url('/css/fonts/ProximaNova-Bold.woff2') format("woff2"), url('/css/fonts/ProximaNova-Bold.woff') format("woff"), url('/css/fonts/ProximaNova-Bold.ttf') format("truetype"), url('/css/fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format("svg"), url('/css/fonts/ProximaNova-Bold.eot?#iefix') format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('/css/fonts/ProximaNova-Light.eot');
+    src: url('/css/fonts/ProximaNova-Light.woff2') format("woff2"), url('/css/fonts/ProximaNova-Light.woff') format("woff"), url('/css/fonts/ProximaNova-Light.ttf') format("truetype"), url('/css/fonts/ProximaNova-Light.svg#ProximaNova-Light') format("svg"), url('/css/fonts/ProximaNova-Light.eot?#iefix') format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bebas';
+    src: url('/css/fonts/BEBAS___.eot');
+    src: url('/css/fonts/BEBAS___.woff') format("woff"), url('/css/fonts/BEBAS___.ttf') format("truetype"), url('/css/fonts/BEBAS___.svg#Bebas') format("svg"), url('/css/fonts/BEBAS___.otf?#iefix') format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Kapra';
+    src: url('/css/fonts/Kapra-Regular.eot');
+    src: url('/css/fonts/Kapra-Regular.woff') format("woff"), url('/css/fonts/Kapra-Regular.ttf') format("truetype"), url('/css/fonts/Kapra-Regular.svg#Kapra') format("svg"), url('/css/fonts/Kapra-Regular.otf?#iefix') format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Slick';
+    src: url('/css/fonts/slick.eot');
+    src: url('/css/fonts/slick.woff') format("woff"), url('/css/fonts/slick.ttf') format("truetype"), url('/css/fonts/slick.svg#slick') format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  

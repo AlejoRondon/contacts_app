@@ -1,0 +1,213 @@
+.typography {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heroheader {
+  font-family: $kapra;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1920px) {
+    font-size: 7rem;
+  }
+
+  @media only all and (min-width: 1441px) and (max-width: 1919px) {
+    font-size: 6rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 6rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 5rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.heading1 {
+  font-family: $kapra;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 4rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 4rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 4rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 2.625rem;
+  }
+}
+
+.heading2 {
+  font-family: $kapra;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 3rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 3rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 3rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.heading3 {
+  font-family: $kapra;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 2.625rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 2.625rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 2.625rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 1.375rem;
+  }
+}
+
+.articleTitle {
+  font-family: $proxima-bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 2rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 1.375rem;
+  }
+}
+
+.pullQuote {
+  font-family: 'Times New Roman';
+  font-style: italic;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 2.25rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 2.25rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 2.25rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.subHeroHeader {
+  font-family: $proxima-reg;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 2rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 1.688rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.titleUnderTiles {
+  font-family: $proxima-bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 1.375rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 1.375rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 1.375rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 1.375rem;
+  }
+}
+
+.subHeading {
+  font-family: $proxima-reg;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media only all and (min-width: 1441px) {
+    font-size: 1.375rem;
+  }
+  @media only all and (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 1.375rem;
+  }
+  @media only all and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 1.375rem;
+  }
+  @media only all and (max-width: 768px) {
+    font-size: 0.875rem;
+  }
+}
+
+.introCopy {
+  font-family: $proxima-reg;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+
+  @media only all and (max-width: 768px) {
+    font-size: 1.375rem;
+  }
+}
+
+.paragraphCopy {
+  font-family: $proxima-reg;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  @media only all and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.hyperlink {
+  font-family: $proxima-reg;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #005edc;
+
+  @media only all and (max-width: 768px) {
+    font-size: 0.75rem;
+  }
+}
+
+.inlineHyperlink {
+  font-family: $proxima-reg;
+  text-decoration: underline;
+  color: #005edc;
+}
