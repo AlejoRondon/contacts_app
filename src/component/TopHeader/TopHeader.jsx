@@ -1,20 +1,16 @@
 import { NavLink } from 'react-router-dom'
 import './TopHeader.scss'
+import LogoIcon from '../LogoIcon/LogoIcon'
 function TopHeader() {
   return (
-    // <header className='TopHeader'>
-    <nav className='TopHeader'>
-      <div className='navlink-wrapper'>
+    <header className='TopHeader'>
+      <LogoIcon></LogoIcon>
+      <nav>
         <NavLink to='/'>Overview</NavLink>
-      </div>
-      <div className='navlink-wrapper'>
         <NavLink to='/favorites'>Favorites</NavLink>
-      </div>
-      <div className='navlink-wrapper'>
         <NavLink to='/contacts'>Contacts</NavLink>
-      </div>
-    </nav>
-    // </header>
+      </nav>
+    </header>
   )
 }
 
