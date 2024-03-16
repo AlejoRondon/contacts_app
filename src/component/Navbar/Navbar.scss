@@ -1,0 +1,100 @@
+@import '../../scss/general.scss';
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .toggle-btn {
+    display: none; /* Initially hide the button */
+  }
+
+  nav {
+    display: flex;
+    height: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      height: 100%;
+      text-decoration: none;
+
+      font-weight: 500;
+      color: $color_globant_black;
+      padding: 0 2rem;
+    }
+
+    a:hover {
+      background-color: rgba(50, 50, 50, 0.1);
+    }
+
+    a.active {
+      color: $color_globant_green;
+      font-weight: bold;
+    }
+  }
+
+  @media only all and (max-width: $breakpoint_mobile) {
+    .toggle-btn {
+      display: block; /* Show the button on mobile */
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: #333; /* Adjust the color as needed */
+      transition: color 0.3s ease; /* Add a smooth color transition on hover */
+      margin: 0 0 0 1rem;
+    }
+
+    .toggle-btn:hover {
+      color: rgba(85, 85, 85, 0.5); /* Change the color on hover */
+    }
+
+    .toggle-btn.active {
+      color: rgba(85, 85, 85, 0.5); /* Change the color on hover */
+    }
+
+    .toggle-btn.active:hover {
+      color: #333; /* Adjust the color as needed */
+    }
+
+    nav {
+      position: fixed; /* Stay in place */
+      display: block; /* Show the navbar when active */
+
+      top: 7vh;
+      right: 0;
+      left: 0;
+      transform: translateY(100%); /* Move the navbar to the right */
+      transition: transform 0.4s ease; /* Add transition for transform */
+      z-index: 1; /* Sit on top */
+      background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+      overflow-x: hidden; /* Disable horizontal scroll */
+
+      a {
+        height: 10vh;
+        text-decoration: none;
+        justify-content: center;
+
+        font-weight: 500;
+        color: white;
+        padding: 0 2rem;
+        box-shadow: 0px 1px 1px rgba(218, 207, 207, 0.2);
+      }
+
+      a:hover {
+        background-color: rgba(128, 128, 128, 0.1);
+      }
+
+      a.active {
+        color: $color_globant_green;
+        font-weight: bold;
+      }
+    }
+
+    nav.active {
+      transform: translateY(0%); /* Reset transform to bring the navbar in from the right */
+    }
+  }
+}

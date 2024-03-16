@@ -11,6 +11,8 @@ import PageFooter from './component/PageFooter/PageFooter'
 import 'reset-css'
 import './App.scss'
 
+// import '@fontawesome/fontawesome-free/css/all.css' // Adjust the path as needed
+
 const Layout = () => (
   <>
     <TopHeader></TopHeader>
