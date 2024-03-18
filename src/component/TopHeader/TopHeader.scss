@@ -1,10 +1,13 @@
 @import '../../scss/general.scss';
 
 .TopHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-  height: 7vh;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 7vh;
+    margin-bottom: 6px;
+  }
 }

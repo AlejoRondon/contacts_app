@@ -1,0 +1,38 @@
+@import '../../scss/general.scss';
+
+.HeadingSection {
+  position: relative;
+  margin: 1rem 0;
+
+  h1 {
+    display: inline-block; /* Make it an inline-block so it doesn't stretch to full width */
+    position: relative; /* Position the <hr> relative to this element */
+    margin: 0;
+    z-index: 1; /* Ensure it appears above the hr */
+    background-color: white;
+    font-size: 2rem;
+    padding: 0 2.5rem 0 0;
+    color: $color_globant_black;
+    font-weight: 500;
+
+    // Media queries for smaller screens
+    @media (max-width: $breakpoint_tablet) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: $breakpoint_mobile) {
+      font-size: 1.5rem;
+      padding: 0 2rem 0 0;
+    }
+  }
+
+  hr {
+    position: absolute; /* Position the <hr> absolutely */
+    margin: 0;
+    width: 100%; /* Adjust the width if needed (here we subtract 40px for the padding) */
+    border: none;
+    border-top: 3px solid $color_globant_green; /* Add border top to simulate hr */
+    top: 50%; /* Position it at the middle of the parent */
+    transform: translateY(-50%); /* Adjust horizontally and vertically to center */
+  }
+}

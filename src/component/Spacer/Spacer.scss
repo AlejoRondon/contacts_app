@@ -1,0 +1,15 @@
+// Spacer.scss
+@import '../../scss/general.scss';
+
+.spacer {
+  height: 3rem; // Default size for large screens
+
+  // Media queries for smaller screens
+  @media (max-width: $breakpoint_tablet) {
+    height: 1.5rem; // Small size for small screens
+  }
+
+  @media (max-width: $breakpoint_mobile) {
+    height: 0.75rem; // Smallest size for extra small screens
+  }
+}

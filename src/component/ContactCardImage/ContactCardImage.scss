@@ -1,0 +1,13 @@
+@import '../../scss/general.scss';
+
+.ContactCardImage {
+  border-radius: 50%;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  // margin: 0 auto;
+
+  &.favorite {
+    border: 0.5rem solid $color_globant_green;
+  }
+}

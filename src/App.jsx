@@ -11,30 +11,34 @@ import PageFooter from './component/PageFooter/PageFooter'
 import 'reset-css'
 import './App.scss'
 
-// import '@fontawesome/fontawesome-free/css/all.css' // Adjust the path as needed
+import { ContactsProvider } from './context/ContactsProvider'
 
-const Layout = () => (
-  <>
-    <TopHeader></TopHeader>
-    {/* Outlet: Renders nested routes */}
-    <Outlet />
-    <PageFooter></PageFooter>
-  </>
-)
+function Layout() {
+  return (
+    <>
+      <TopHeader></TopHeader>
+      {/* Outlet: Renders nested routes */}
+      <Outlet />
+      {/* <PageFooter></PageFooter> */}
+    </>
+  )
+}
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        {/* Main Route */}
-        <Route path='/' element={<Layout />}>
-          {/* Nested Routes */}
-          <Route index element={<OverviewPage />} /> {/* Home Page */}
-          <Route path='favorites' element={<FavoritesPage />} /> {/* Blogs Page */}
-          <Route path='contacts' element={<ContactsPage />} /> {/* Contact Page */}
-          <Route path='*' element={<NoPage />} /> {/* 404 Page */}
-        </Route>
-      </Routes>
+      <ContactsProvider>
+        <Routes>
+          {/* Main Route */}
+          <Route path='/' element={<Layout />}>
+            {/* Nested Routes */}
+            <Route index element={<OverviewPage />} /> {/* Home Page */}
+            <Route path='contacts' element={<ContactsPage />} /> {/* Contact Page */}
+            <Route path='favorites' element={<FavoritesPage />} /> {/* Blogs Page */}
+            <Route path='*' element={<NoPage />} /> {/* 404 Page */}
+          </Route>
+        </Routes>
+      </ContactsProvider>
     </BrowserRouter>
   )
 }

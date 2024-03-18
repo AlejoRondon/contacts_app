@@ -20,11 +20,11 @@ function Navbar() {
         <NavLink onClick={handleClickNavLink} to='/'>
           Overview
         </NavLink>
-        <NavLink onClick={handleClickNavLink} to='/favorites'>
-          Favorites
-        </NavLink>
         <NavLink onClick={handleClickNavLink} to='/contacts'>
           Contacts
+        </NavLink>
+        <NavLink onClick={handleClickNavLink} to='/favorites'>
+          Favorites
         </NavLink>
       </nav>
 
