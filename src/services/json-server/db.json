@@ -1,0 +1,276 @@
+{
+  "contacts": [
+    {
+      "id": "idb59e0ccc0211f",
+      "avatar": "https://ui-avatars.com/api/?name=Alejandro%20Rondon&size=150",
+      "first_name": "Alejandro",
+      "last_name": "Rondon",
+      "email": "alejo@gmail.com",
+      "favorite": false
+    },
+    {
+      "id": "id7d45456ae4419",
+      "avatar": "https://ui-avatars.com/api/?name=Mariana%20Jackeline&size=150",
+      "first_name": "Mariana",
+      "last_name": "Jackeline",
+      "email": "jacke@gmai",
+      "favorite": true
+    },
+    {
+      "id": "idd4963979d5c47",
+      "avatar": "https://ui-avatars.com/api/?name=Maris%20Mamas&size=150",
+      "first_name": "Maris",
+      "last_name": "Mamas",
+      "email": "mama@gmail.com",
+      "favorite": false
+    },
+    {
+      "id": "id7cfff40a6edd6",
+      "avatar": "https://ui-avatars.com/api/?name=Pedro%20Pablo&size=150",
+      "first_name": "Pedro",
+      "last_name": "Pablo",
+      "email": "pedro@pablo",
+      "favorite": false
+    },
+    {
+      "id": "idf23f12a2b2edb",
+      "avatar": "https://ui-avatars.com/api/?name=Willy%20%20Rondon&size=150",
+      "first_name": "Willy ",
+      "last_name": "Rondon",
+      "email": "Willy@Rondon",
+      "favorite": true
+    },
+    {
+      "id": "ida8a6af1ef3d35",
+      "avatar": "https://ui-avatars.com/api/?name=Catalina%20Botero&size=150",
+      "first_name": "Catalina",
+      "last_name": "Botero",
+      "email": "catbot88@gmail.com",
+      "favorite": true
+    },
+    {
+      "id": "idbc3bb51092e",
+      "avatar": "https://ui-avatars.com/api/?name=Emilia%20Rondon&size=150",
+      "first_name": "Emilia",
+      "last_name": "Rondon",
+      "email": "emi@rondon",
+      "favorite": true
+    },
+    {
+      "id": "id6a509e3925947",
+      "avatar": "https://ui-avatars.com/api/?name=Santi%20Botero&size=150",
+      "first_name": "Santi",
+      "last_name": "Botero",
+      "email": "santi@botero",
+      "favorite": true
+    },
+    {
+      "id": "idf910e85ef750b",
+      "avatar": "https://ui-avatars.com/api/?name=Aleja%20Garcia&size=150",
+      "first_name": "Aleja",
+      "last_name": "Garcia",
+      "email": "ale@garcia",
+      "favorite": true
+    },
+    {
+      "id": "ideae4fef349821",
+      "avatar": "https://ui-avatars.com/api/?name=Jerson%20Rondon&size=150",
+      "first_name": "Jerson",
+      "last_name": "Rondon",
+      "email": "jer@son",
+      "favorite": true
+    },
+    {
+      "id": "id385bfd64b8",
+      "avatar": "https://ui-avatars.com/api/?name=Lucas%20Silva&size=150",
+      "first_name": "Lucas",
+      "last_name": "Silva",
+      "email": "lucas.silva@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id76fdca24d4",
+      "avatar": "https://ui-avatars.com/api/?name=Juliana%20Ferreira&size=150",
+      "first_name": "Juliana",
+      "last_name": "Ferreira",
+      "email": "juliana.ferreira@example.com",
+      "favorite": true
+    },
+    {
+      "id": "id15aefb35ca",
+      "avatar": "https://ui-avatars.com/api/?name=Gabriel%20Rocha&size=150",
+      "first_name": "Gabriel",
+      "last_name": "Rocha",
+      "email": "gabriel.rocha@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id2f52e614e5",
+      "avatar": "https://ui-avatars.com/api/?name=Ana%20Carvalho&size=150",
+      "first_name": "Ana",
+      "last_name": "Carvalho",
+      "email": "ana.carvalho@example.com",
+      "favorite": true
+    },
+    {
+      "id": "idfc8e27957d",
+      "avatar": "https://ui-avatars.com/api/?name=Pedro%20Silveira&size=150",
+      "first_name": "Pedro",
+      "last_name": "Silveira",
+      "email": "pedro.silveira@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id0e2d80c8a6",
+      "avatar": "https://ui-avatars.com/api/?name=Laura%20Santos&size=150",
+      "first_name": "Laura",
+      "last_name": "Santos",
+      "email": "laura.santos@example.com",
+      "favorite": true
+    },
+    {
+      "id": "id8d56f8a225",
+      "avatar": "https://ui-avatars.com/api/?name=Carlos%20Costa&size=150",
+      "first_name": "Carlos",
+      "last_name": "Costa",
+      "email": "carlos.costa@example.com",
+      "favorite": false
+    },
+    {
+      "id": "idff7a894db3",
+      "avatar": "https://ui-avatars.com/api/?name=Paula%20Oliveira&size=150",
+      "first_name": "Paula",
+      "last_name": "Oliveira",
+      "email": "paula.oliveira@example.com",
+      "favorite": true
+    },
+    {
+      "id": "id7dd4365402",
+      "avatar": "https://ui-avatars.com/api/?name=Vinicius%20Santana&size=150",
+      "first_name": "Vinicius",
+      "last_name": "Santana",
+      "email": "vinicius.santana@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id43066b7c5d",
+      "avatar": "https://ui-avatars.com/api/?name=Camila%20Araujo&size=150",
+      "first_name": "Camila",
+      "last_name": "Araujo",
+      "email": "camila.araujo@example.com",
+      "favorite": true
+    },
+    {
+      "id": "idfcb865ec26",
+      "avatar": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Souza&size=150",
+      "first_name": "João",
+      "last_name": "Souza",
+      "email": "joao.souza@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id5b572e1f7e",
+      "avatar": "https://ui-avatars.com/api/?name=Bruna%20Lima&size=150",
+      "first_name": "Bruna",
+      "last_name": "Lima",
+      "email": "bruna.lima@example.com",
+      "favorite": true
+    },
+    {
+      "id": "idfc1c930a88",
+      "avatar": "https://ui-avatars.com/api/?name=Ricardo%20Oliveira&size=150",
+      "first_name": "Ricardo",
+      "last_name": "Oliveira",
+      "email": "ricardo.oliveira@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id4b89d9ba7d",
+      "avatar": "https://ui-avatars.com/api/?name=Isabela%20Almeida&size=150",
+      "first_name": "Isabela",
+      "last_name": "Almeida",
+      "email": "isabela.almeida@example.com",
+      "favorite": true
+    },
+    {
+      "id": "ida76c8e96e3",
+      "avatar": "https://ui-avatars.com/api/?name=Lucas%20Ribeiro&size=150",
+      "first_name": "Lucas",
+      "last_name": "Ribeiro",
+      "email": "lucas.ribeiro@example.com",
+      "favorite": false
+    },
+    {
+      "id": "id46d99ac13b",
+      "avatar": "https://ui-avatars.com/api/?name=Amanda%20Martins&size=150",
+      "first_name": "Amanda",
+      "last_name": "Martins",
+      "email": "amanda.martins@example.com",
+      "favorite": true
+    },
+    {
+      "id": "idef738b152286c",
+      "avatar": "https://ui-avatars.com/api/?name=Baileys%20Alejo&size=150",
+      "first_name": "Baileys",
+      "last_name": "Alejo",
+      "email": "ba@ileys",
+      "favorite": true
+    },
+    {
+      "id": "id816a760907448",
+      "avatar": "https://ui-avatars.com/api/?name=juanita%20rondon&size=150",
+      "first_name": "juanita",
+      "last_name": "rondon",
+      "email": "jau@gs",
+      "favorite": true
+    },
+    {
+      "id": "id902fca960320e",
+      "avatar": "https://ui-avatars.com/api/?name=salchifrosquis%20josefin&size=150",
+      "first_name": "salchifrosquis",
+      "last_name": "josefin",
+      "email": "jose@fin",
+      "favorite": true
+    },
+    {
+      "id": "id8257a24744c57",
+      "avatar": "https://ui-avatars.com/api/?name=hornis%20trosquis&size=150",
+      "first_name": "hornis",
+      "last_name": "trosquis",
+      "email": "jo@g",
+      "favorite": true
+    },
+    {
+      "id": "id08fb5435066bf",
+      "avatar": "https://ui-avatars.com/api/?name=hora%20de%20dormir&size=150",
+      "first_name": "hora",
+      "last_name": "de dormir",
+      "email": "ya@mismo",
+      "favorite": true
+    },
+    {
+      "id": "id4cbd6e58dd8ae",
+      "avatar": "https://ui-avatars.com/api/?name=god%20is%20my%20creator&size=150",
+      "first_name": "god is",
+      "last_name": "my creator",
+      "email": "I@loveyou",
+      "favorite": true
+    },
+    {
+      "id": "id8df98493c7c89",
+      "avatar": "https://ui-avatars.com/api/?name=jeremias%20nichol&size=150",
+      "first_name": "jeremias",
+      "last_name": "nichol",
+      "email": "nicho@jere",
+      "favorite": false
+    },
+    {
+      "id": "id75fb18c7146bb",
+      "avatar": "https://ui-avatars.com/api/?name=David%20Alejandro%20Rondon%20Berrio&size=150",
+      "first_name": "David Alejandro",
+      "last_name": "Rondon Berrio",
+      "email": "david@rondon",
+      "favorite": false
+    }
+  ]
+}
