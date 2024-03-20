@@ -271,6 +271,14 @@
       "last_name": "Rondon Berrio",
       "email": "david@rondon",
       "favorite": false
+    },
+    {
+      "id": "idba3144ba49c19",
+      "avatar": "https://ui-avatars.com/api/?name=Baile%20Firo&size=150",
+      "first_name": "Baile",
+      "last_name": "Firo",
+      "email": "Firulay@gmail",
+      "favorite": false
     }
   ]
 }

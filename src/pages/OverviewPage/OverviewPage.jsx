@@ -1,27 +1,36 @@
 import './OverviewPage.scss'
-import { useContactsContext } from '../../context/ContactsProvider'
 import HeadingSection from '../../component/HeadingSection/HeadingSection'
 import Spacer from '../../component/Spacer/Spacer'
 import CardsContainer from '../../component/CardsContainer/CardsContainer'
 import ContactCard from '../../component/ContactCard/ContactCard'
-import { useState, useEffect } from 'react'
+
+import { useSelector, useDispatch } from 'react-redux'
+// import { toggleTaskStatus, deleteTask } from '../../redux/appInfoSlice'
 
 function OverviewPage() {
-  const { state, dispatch } = useContactsContext()
-  const { favorites, setFavorites } = useState()
-  // max_favorites_in_overview: 6,
-  // max_contacts_in_overview: 12,
-  // max_contact_per_page: 12,
+  const contacts = useSelector(state => state.app_info.contacts)
+  const settings = useSelector(state => state.app_info.settings)
+  // const dispatch = useDispatch()
+
+  // const handleToggleTask = (e, taskId) => {
+  //   console.log('handleToggleTask')
+  //   dispatchi(toggleTaskStatus(taskId))
+  // }
+
+  // const handleDeleteTask = (e, taskId) => {
+  //   console.log('handleDeleteTask')
+  //   dispatchi(deleteTask(taskId))
+  // }
   return (
     <section className='OverviewPage content-wrapper'>
       <Spacer />
       <HeadingSection>Favorites</HeadingSection>
       <CardsContainer>
-        {state.contacts
+        {contacts
           .filter(e => {
             return e.favorite === true
           })
-          .slice(0, state.settings.max_favorites_in_overview)
+          .slice(0, settings.max_favorites_in_overview)
           .map((e, i) => {
             return <ContactCard contactInfo={e} key={i}></ContactCard>
           })}
@@ -29,12 +38,12 @@ function OverviewPage() {
       {/* <Spacer /> */}
       <HeadingSection>Contact List</HeadingSection>
       <CardsContainer>
-        {state.contacts
+        {contacts
           .filter(e => {
             return e.favorite === false
           })
           .shuffle()
-          .slice(0, state.settings.max_contacts_in_overview)
+          .slice(0, settings.max_contacts_in_overview)
           .map((e, i) => {
             return <ContactCard contactInfo={e} key={i}></ContactCard>
           })}
