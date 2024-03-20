@@ -12,7 +12,7 @@ const ContactForm = ({ onSubmit }) => {
 
   const validationSchema = Yup.object({
     first_name: Yup.string().required('Firstname is required').min(4, 'Firstname must be at least 6 characters').max(20, 'Fistname must be at most 18 characters'),
-    last_name: Yup.string().required('Firstname is required').min(4, 'Firstname must be at least 6 characters').max(20, 'Fistname must be at most 18 characters'),
+    last_name: Yup.string().required('Lastname is required').min(4, 'Firstname must be at least 6 characters').max(20, 'Fistname must be at most 18 characters'),
     email: Yup.string().email('Invalid email address').required('Email is required'),
   })
 

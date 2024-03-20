@@ -56,15 +56,17 @@ const ContactsPaginator = ({ contacts, contactsPerPage, onPageChange }) => {
 
   return (
     <div className='Paginator'>
-      <button className='page-item' onClick={handlePrevious} disabled={isFirstPage}>
-        {'<'}
-      </button>
-      <span className='page-legend'>
-        {currentPage} of {totalPages}
-      </span>
-      <button className='page-item' onClick={handleNext} disabled={isLastPage}>
-        {'>'}
-      </button>
+      <div className='Paginator_Wrapper'>
+        <button className='page-item' onClick={handlePrevious} disabled={isFirstPage}>
+          {'<'}
+        </button>
+        <span className='page-legend'>
+          {currentPage} of {totalPages}
+        </span>
+        <button className='page-item' onClick={handleNext} disabled={isLastPage}>
+          {'>'}
+        </button>
+      </div>
     </div>
   )
 }
