@@ -335,6 +335,14 @@
       "last_name": "Sabrosito",
       "email": "vera@no",
       "favorite": false
+    },
+    {
+      "id": "hb8LgQ0fSfYValpaDHeb8",
+      "avatar": "https://ui-avatars.com/api/?name=Ramiro%20Portobello&size=150",
+      "first_name": "Ramiro",
+      "last_name": "Portobello",
+      "email": "rami@porto",
+      "favorite": false
     }
   ]
 }
