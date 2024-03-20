@@ -2,12 +2,12 @@ import './TopHeader.scss'
 import LogoIcon from '../LogoIcon/LogoIcon'
 import Navbar from '../Navbar/Navbar'
 
-function TopHeader() {
+function TopHeader({ onNewContactBtnClick }) {
   return (
     <header className='TopHeader'>
       <div className='content-wrapper'>
         <LogoIcon></LogoIcon>
-        <Navbar></Navbar>
+        <Navbar onNewContactBtnClick={onNewContactBtnClick}></Navbar>
       </div>
     </header>
   )

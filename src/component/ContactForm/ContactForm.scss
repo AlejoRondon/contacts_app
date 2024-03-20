@@ -1,10 +1,19 @@
-.ticket-form-container {
-  max-width: 400px;
+@import '../../scss/general.scss';
+
+// Define variables
+$primary-color: #007bff;
+$primary-color-hover: #0056b3;
+$border-color: #ccc;
+$border-radius: 5px;
+
+.contact-form-container {
+  min-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  // background-color: #f9f9f9;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  // color: white;
+  background-color: $color_globant_green;
 }
 
 .form-group {
@@ -24,20 +33,20 @@ label {
 .form-control {
   width: 100%;
   padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
   box-sizing: border-box;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: $primary-color;
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 3px;
+  border-radius: $border-radius;
   cursor: pointer;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: $primary-color-hover;
   }
 }

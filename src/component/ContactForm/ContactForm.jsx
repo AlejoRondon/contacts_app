@@ -17,8 +17,8 @@ const ContactForm = ({ onSubmit }) => {
   })
 
   return (
-    <div className='ticket-form-container'>
-      <h1>Create Contact</h1>
+    <div className='contact-form-container'>
+      <h1 style={{ textAlign: 'center', fontSize: '1.5rem' }}>Create Contact</h1>
       <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
         {({ isSubmitting }) => (
           <Form>
@@ -43,7 +43,7 @@ const ContactForm = ({ onSubmit }) => {
               </label>
             </div>
             <button type='submit' disabled={isSubmitting} className='btn btn-primary'>
-              Submit
+              Save
             </button>
           </Form>
         )}

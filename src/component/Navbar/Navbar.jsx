@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-function Navbar() {
+function Navbar({ onNewContactBtnClick }) {
   const [showNav, setShowNav] = useState(false)
 
   const toggleNav = () => {
@@ -26,6 +26,7 @@ function Navbar() {
         <NavLink onClick={handleClickNavLink} to='/favorites'>
           Favorites
         </NavLink>
+        <NavLink onClick={onNewContactBtnClick}>+ New Contact</NavLink>
       </nav>
 
       <button className={`toggle-btn ${showNav ? 'active' : ''}`} onClick={toggleNav}>

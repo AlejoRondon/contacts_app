@@ -41,8 +41,14 @@ const appInfoSlice = createSlice({
     setContacts: (state, action) => {
       state.contacts = [...action.payload]
     },
+    addContact: (state, action) => {
+      state.contacts = [...state.contacts, action.payload]
+    },
+    deleteContact: (state, action) => {
+      state.contacts = state.contacts.filter(conctact => conctact.id !== action.payload)
+    },
   },
 })
 
-export const { setContacts, addTask, toggleTaskStatus, deleteTask, resetTasks } = appInfoSlice.actions
+export const { setContacts, addContact, addTask, toggleTaskStatus, deleteTask, resetTasks } = appInfoSlice.actions
 export default appInfoSlice.reducer

@@ -6,37 +6,45 @@ import ContactsPage from './pages/ContactsPage/ContactsPage'
 import TopHeader from './component/TopHeader/TopHeader'
 import NoPage from './pages/NoPage/NoPage'
 import PageFooter from './component/PageFooter/PageFooter'
-
 import 'reset-css'
 import './App.scss'
 import ContactForm from './component/ContactForm/ContactForm'
+import ContactModal from './component/ContactModal/ContactModal'
 import generateAvatarUrl from './services/avatar'
 import reqrest from './services/reqres'
-import { createNewContact } from './services/json-server/db_services'
-import { fetchAllContacts } from './services/json-server/db_services'
+import { createNewContactDB, fetchAllContactsDB } from './services/json-server/db_services'
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { setContacts } from './redux/appInfoSlice'
+import { setContacts, addContact } from './redux/appInfoSlice'
+import { nanoid } from '@reduxjs/toolkit'
+import { useState } from 'react'
 
 function Layout() {
-  const contacts = useSelector(state => state.app_info.contacts)
   const dispatch = useDispatch()
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleModal = value => {
+    setIsModalOpen(value)
+  }
 
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-    let new_unique_id = 'id' + Math.random().toString(16).slice(2)
-    let new_contact = { id: new_unique_id, avatar: generateAvatarUrl(values.first_name, values.last_name), ...values }
-    console.log(new_contact)
-    createNewContact(new_contact)
-    // dispatch({ type: 'SET_CONTACTS', payload: [new_contact, ...state.contacts] })
-    dispatch(setContacts([new_contact, ...contacts]))
+    let new_contact = { id: nanoid(), avatar: generateAvatarUrl(values.first_name, values.last_name), ...values }
+    createNewContactDB(new_contact)
+    dispatch(addContact(new_contact))
     setSubmitting(false)
     resetForm()
+    setIsModalOpen(false)
   }
 
   return (
     <>
-      <TopHeader></TopHeader>
-      <ContactForm onSubmit={handleSubmit}></ContactForm>
+      <TopHeader
+        onNewContactBtnClick={() => {
+          handleModal(true)
+        }}></TopHeader>
+      <ContactModal isOpen={isModalOpen} onClose={() => handleModal(false)}>
+        <ContactForm onSubmit={handleSubmit}></ContactForm>
+      </ContactModal>
       {/* Outlet: Renders nested routes */}
       <Outlet />
       {/* <PageFooter></PageFooter> */}
@@ -62,7 +70,7 @@ function App() {
           return {...e, 'favorite': false}
         })
 
-        let contacts_json_server = await fetchAllContacts()
+        let contacts_json_server = await fetchAllContactsDB()
   
         dispatch(setContacts([...contacts_reqres, ...contacts_json_server]))
       } catch (error) {

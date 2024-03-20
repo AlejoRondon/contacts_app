@@ -4,7 +4,7 @@ import axios from 'axios'
 
 const API_BASE_URL = 'http://localhost:3001' // Adjust the base URL as needed
 
-export async function fetchAllContacts() {
+export async function fetchAllContactsDB() {
   try {
     const response = await axios.get(`${API_BASE_URL}/contacts`)
     return response.data
@@ -14,7 +14,7 @@ export async function fetchAllContacts() {
   }
 }
 
-export async function fetchContact(contactId) {
+export async function fetchContactDB(contactId) {
   try {
     const response = await axios.get(`${API_BASE_URL}/contacts/${contactId}`)
     return response.data
@@ -24,7 +24,7 @@ export async function fetchContact(contactId) {
   }
 }
 
-export async function createNewContact(contact) {
+export async function createNewContactDB(contact) {
   try {
     const response = await axios.post(`${API_BASE_URL}/contacts`, contact, {
       headers: {
@@ -43,7 +43,7 @@ export async function createNewContact(contact) {
   }
 }
 
-export async function updateContact(contactId, updatedData) {
+export async function updateContactDB(contactId, updatedData) {
   try {
     const response = await axios.put(`${API_BASE_URL}/contacts/${contactId}`, updatedData, {
       headers: {
@@ -62,7 +62,7 @@ export async function updateContact(contactId, updatedData) {
   }
 }
 
-export async function deleteContact(contactId) {
+export async function deleteContactDB(contactId) {
   try {
     const response = await axios.delete(`${API_BASE_URL}/contacts/${contactId}`)
 
