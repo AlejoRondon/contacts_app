@@ -24,7 +24,7 @@ function ContactCard({ contactInfo }) {
   }
 
   const RemoveButton = props => (
-    <RedButton font_size='0.8rem' {...props}>
+    <RedButton $font_size='0.8rem' {...props}>
       {location.pathname === '/' || location.pathname === '/favorites' ? <FontAwesomeIcon icon={faX} /> : <FontAwesomeIcon icon={faTrash} />}
       {location.pathname !== '/contacts' ? <span>{'   '}REMOVE</span> : ''}
     </RedButton>
@@ -32,11 +32,11 @@ function ContactCard({ contactInfo }) {
 
   const FavoriteButton = props =>
     !contactInfo.favorite ? (
-      <GreenButton font_size='0.8rem' {...props}>
+      <GreenButton $font_size='0.8rem' {...props}>
         <FontAwesomeIcon icon={faHeart} />
       </GreenButton>
     ) : (
-      <RedButton font_size='0.8rem' {...props}>
+      <RedButton $font_size='0.8rem' {...props}>
         <FontAwesomeIcon icon={faX} />
         {location.pathname !== '/contacts' ? <span>{'   '}REMOVE</span> : ''}
       </RedButton>

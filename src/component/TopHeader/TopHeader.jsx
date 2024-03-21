@@ -12,7 +12,7 @@ function TopHeader({ onNewContactBtnClick }) {
         <LogoIcon></LogoIcon>
         <div style={{ display: 'flex', alignItems: 'center', height: '100%', gap: '1rem' }}>
           <Navbar onNewContactBtnClick={onNewContactBtnClick}></Navbar>
-          <StyledButton onClick={onNewContactBtnClick} background_color={'#C1D72F'}>
+          <StyledButton onClick={onNewContactBtnClick} $background_color={'#C1D72F'}>
             <FontAwesomeIcon icon={faPlus} /> New
           </StyledButton>
         </div>

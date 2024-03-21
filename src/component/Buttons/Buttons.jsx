@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
-  font-size: ${props => props.font_size || '1rem'};
+  font-size: ${props => props.$font_size || '1rem'};
   padding: 0.5em 0.6em;
   border: 1px solid black;
   border-radius: 3px;
   cursor: pointer;
-  background: ${props => props.background_color || 'white'};
-  border-color: ${props => props.background_color || 'black'};
-  color: ${props => (props.font_color ? '#BF4F74' : 'black')};
+  background: ${props => props.$background_color || 'white'};
+  border-color: ${props => props.$background_color || 'black'};
+  color: ${props => (props.$font_color ? '#BF4F74' : 'black')};
   transition: transform 0.2s ease-in-out;
 
   &:hover {
