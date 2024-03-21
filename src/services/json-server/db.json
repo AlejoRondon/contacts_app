@@ -6,7 +6,7 @@
       "first_name": "Alejandro",
       "last_name": "Rondon",
       "email": "alejo@gmail.com",
-      "favorite": false,
+      "favorite": true,
       "source": "json_server"
     },
     {
@@ -24,7 +24,7 @@
       "first_name": "Willy ",
       "last_name": "Rondon",
       "email": "Willy@Rondon",
-      "favorite": false,
+      "favorite": true,
       "source": "json_server"
     },
     {
@@ -42,7 +42,7 @@
       "first_name": "Emilia",
       "last_name": "Rondon",
       "email": "emi@rondon",
-      "favorite": true,
+      "favorite": false,
       "source": "json_server"
     },
     {
@@ -60,16 +60,7 @@
       "first_name": "Aleja",
       "last_name": "Garcia",
       "email": "ale@garcia",
-      "favorite": true,
-      "source": "json_server"
-    },
-    {
-      "id": "ideae4fef349821",
-      "avatar": "https://ui-avatars.com/api/?name=Jerson%20Rondon&size=150",
-      "first_name": "Jerson",
-      "last_name": "Rondon",
-      "email": "jer@son",
-      "favorite": true,
+      "favorite": false,
       "source": "json_server"
     },
     {
@@ -87,7 +78,7 @@
       "first_name": "Juliana",
       "last_name": "Ferreira",
       "email": "juliana.ferreira@example.com",
-      "favorite": true,
+      "favorite": false,
       "source": "json_server"
     },
     {
@@ -96,7 +87,7 @@
       "first_name": "Gabriel",
       "last_name": "Rocha",
       "email": "gabriel.rocha@example.com",
-      "favorite": true,
+      "favorite": false,
       "source": "json_server"
     },
     {

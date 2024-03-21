@@ -53,11 +53,9 @@ function Layout() {
 }
 
 function App() {
-  const contacts = useSelector(state => state.app_info.contacts)
   const reqres_favorites = useSelector(state => state.app_info.reqres_favorites)
   const reqres_deleted = useSelector(state => state.app_info.reqres_deleted)
 
-  console.log('Contacts from <app>: ', contacts)
   const dispatch = useDispatch()
 
   useEffect(() => {

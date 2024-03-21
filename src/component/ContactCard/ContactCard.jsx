@@ -6,18 +6,15 @@ import { faTrash, faHeart, faX } from '@fortawesome/free-solid-svg-icons'
 import { RedButton, GreenButton } from '../Buttons/Buttons'
 import { useDispatch } from 'react-redux'
 import { deleteContact, toggleFavorite } from '../../redux-TK/appInfoSlice'
-import { updateContactDB, deleteContactDB } from '../../services/json-server/db_services'
 
 function ContactCard({ contactInfo }) {
   const dispatch = useDispatch()
   const location = useLocation()
 
-  const handleFavoriteClick = async (e, id) => {
-    console.log('favorite toggled', id)
+  const handleFavoriteClick = async () => {
     dispatch(toggleFavorite(contactInfo))
   }
-  const handleRemoveClick = async (e, id) => {
-    console.log('Remove ', id)
+  const handleRemoveClick = async () => {
     dispatch(deleteContact(contactInfo))
   }
 
@@ -48,19 +45,9 @@ function ContactCard({ contactInfo }) {
         <span className='source'>{contactInfo.source}</span>
         <hr></hr>
         <div className={`buttons-container`}>
-          <FavoriteButton
-            onClick={e => {
-              handleFavoriteClick(e, contactInfo.id)
-            }}></FavoriteButton>
+          <FavoriteButton onClick={handleFavoriteClick}></FavoriteButton>
 
-          {location.pathname === '/contacts' ? (
-            <RemoveButton
-              onClick={e => {
-                handleRemoveClick(e, contactInfo.id)
-              }}></RemoveButton>
-          ) : (
-            ''
-          )}
+          {location.pathname === '/contacts' ? <RemoveButton onClick={handleRemoveClick}></RemoveButton> : ''}
         </div>
       </article>
     )
