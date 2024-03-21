@@ -1,43 +1,28 @@
 import { useState, useEffect } from 'react'
 import './ContactsPaginator.scss'
+import { useSelector } from 'react-redux'
 
-const ContactsPaginator = ({ contacts, contactsPerPage, onPageChange }) => {
-  const [pageOfContacts, setPageOfContacts] = useState(null)
-  const [currentPage, setCurrentPage] = useState(null)
-  const [totalPages, setTotalPages] = useState(null)
+const ContactsPaginator = ({ onPageChange, onlyFavorites }) => {
+  const [currentPage, setCurrentPage] = useState(1)
+  const contacts = useSelector(state => state.app_info.contacts) // Suscribing component to the redux store
+  const contactsPerPage = useSelector(state => state.app_info.settings.max_contacts_per_page)
 
-  useEffect(() => {
-    if (!contacts) return
-    const contacts_length = contacts.length
-    if (!contacts_length) return
-    console.log('contacts... ok', contacts)
-    setTotalPages(Math.ceil(contacts_length / contactsPerPage))
-  }, [contacts, contactsPerPage])
+  let filtered_contacts = onlyFavorites !== undefined ? contacts.filter(e => e.favorite === true) : contacts
+
+  const totalPages = Math.ceil(filtered_contacts.length / contactsPerPage)
 
   useEffect(() => {
-    if (!totalPages) return
-    console.log('totalPages ', totalPages)
-    setCurrentPage(1)
-  }, [totalPages])
-
-  useEffect(() => {
-    if (!currentPage) return
-    console.log('>ok currentPage ', currentPage)
+    if (!contacts.length) return
+    console.log('currentPage ', currentPage)
 
     const startIndex = (currentPage - 1) * contactsPerPage
     const endIndex = startIndex + contactsPerPage
-    const subarray = contacts.slice(startIndex, endIndex)
-    setPageOfContacts(subarray)
-  }, [currentPage])
+    const pageOfContacts = filtered_contacts.slice(startIndex, endIndex)
 
-  useEffect(() => {
-    if (!pageOfContacts) return
+    onPageChange(pageOfContacts)
 
-    if (pageOfContacts.length > 0) {
-      console.log('->pageOfContacts ', pageOfContacts)
-      onPageChange(pageOfContacts)
-    }
-  }, [pageOfContacts, onPageChange])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPage, contacts])
 
   const isFirstPage = currentPage === 1
   const isLastPage = currentPage === totalPages
@@ -56,17 +41,23 @@ const ContactsPaginator = ({ contacts, contactsPerPage, onPageChange }) => {
 
   return (
     <div className='Paginator'>
-      <div className='Paginator_Wrapper'>
-        <button className='page-item' onClick={handlePrevious} disabled={isFirstPage}>
-          {'<'}
-        </button>
-        <span className='page-legend'>
-          {currentPage} of {totalPages}
-        </span>
-        <button className='page-item' onClick={handleNext} disabled={isLastPage}>
-          {'>'}
-        </button>
-      </div>
+      {contacts.length ? (
+        <div className='Paginator_Wrapper'>
+          <button className='page-item' onClick={handlePrevious} disabled={isFirstPage}>
+            {'<'}
+          </button>
+          <span className='page-legend'>
+            {currentPage} of {totalPages}
+          </span>
+          <button className='page-item' onClick={handleNext} disabled={isLastPage}>
+            {'>'}
+          </button>
+        </div>
+      ) : (
+        <div className='Paginator_Wrapper'>
+          <span>Loading...</span>
+        </div>
+      )}
     </div>
   )
 }

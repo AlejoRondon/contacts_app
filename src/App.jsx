@@ -28,7 +28,7 @@ function Layout() {
   }
 
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-    let new_contact = { id: nanoid(), avatar: generateAvatarUrl(values.first_name, values.last_name), ...values }
+    let new_contact = { id: nanoid(), avatar: generateAvatarUrl(values.first_name, values.last_name), ...values, source: 'json-server' }
     createNewContactDB(new_contact)
     dispatch(addContact(new_contact))
     setSubmitting(false)
@@ -67,7 +67,7 @@ function App() {
         response = await reqrest.get(`/?page=2`)
         contacts_reqres = [...contacts_reqres, ...response.data.data]
         contacts_reqres = contacts_reqres.map((e)=>{
-          return {...e, 'favorite': false}
+          return {...e, 'favorite': false, source : 'api_reqres'}  // adding favorite field
         })
 
         let contacts_json_server = await fetchAllContactsDB()

@@ -6,7 +6,8 @@
       "first_name": "Alejandro",
       "last_name": "Rondon",
       "email": "alejo@gmail.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id7d45456ae4419",
@@ -14,23 +15,8 @@
       "first_name": "Mariana",
       "last_name": "Jackeline",
       "email": "jacke@gmai",
-      "favorite": true
-    },
-    {
-      "id": "idd4963979d5c47",
-      "avatar": "https://ui-avatars.com/api/?name=Maris%20Mamas&size=150",
-      "first_name": "Maris",
-      "last_name": "Mamas",
-      "email": "mama@gmail.com",
-      "favorite": false
-    },
-    {
-      "id": "id7cfff40a6edd6",
-      "avatar": "https://ui-avatars.com/api/?name=Pedro%20Pablo&size=150",
-      "first_name": "Pedro",
-      "last_name": "Pablo",
-      "email": "pedro@pablo",
-      "favorite": false
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "idf23f12a2b2edb",
@@ -38,7 +24,8 @@
       "first_name": "Willy ",
       "last_name": "Rondon",
       "email": "Willy@Rondon",
-      "favorite": true
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "ida8a6af1ef3d35",
@@ -46,7 +33,8 @@
       "first_name": "Catalina",
       "last_name": "Botero",
       "email": "catbot88@gmail.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "idbc3bb51092e",
@@ -54,7 +42,8 @@
       "first_name": "Emilia",
       "last_name": "Rondon",
       "email": "emi@rondon",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id6a509e3925947",
@@ -62,7 +51,8 @@
       "first_name": "Santi",
       "last_name": "Botero",
       "email": "santi@botero",
-      "favorite": true
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "idf910e85ef750b",
@@ -70,7 +60,8 @@
       "first_name": "Aleja",
       "last_name": "Garcia",
       "email": "ale@garcia",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "ideae4fef349821",
@@ -78,7 +69,8 @@
       "first_name": "Jerson",
       "last_name": "Rondon",
       "email": "jer@son",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id385bfd64b8",
@@ -86,7 +78,8 @@
       "first_name": "Lucas",
       "last_name": "Silva",
       "email": "lucas.silva@example.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id76fdca24d4",
@@ -94,7 +87,8 @@
       "first_name": "Juliana",
       "last_name": "Ferreira",
       "email": "juliana.ferreira@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id15aefb35ca",
@@ -102,7 +96,8 @@
       "first_name": "Gabriel",
       "last_name": "Rocha",
       "email": "gabriel.rocha@example.com",
-      "favorite": false
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id2f52e614e5",
@@ -110,7 +105,8 @@
       "first_name": "Ana",
       "last_name": "Carvalho",
       "email": "ana.carvalho@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "idfc8e27957d",
@@ -118,7 +114,8 @@
       "first_name": "Pedro",
       "last_name": "Silveira",
       "email": "pedro.silveira@example.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id0e2d80c8a6",
@@ -126,7 +123,8 @@
       "first_name": "Laura",
       "last_name": "Santos",
       "email": "laura.santos@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id8d56f8a225",
@@ -134,7 +132,8 @@
       "first_name": "Carlos",
       "last_name": "Costa",
       "email": "carlos.costa@example.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "idff7a894db3",
@@ -142,7 +141,8 @@
       "first_name": "Paula",
       "last_name": "Oliveira",
       "email": "paula.oliveira@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id7dd4365402",
@@ -150,7 +150,8 @@
       "first_name": "Vinicius",
       "last_name": "Santana",
       "email": "vinicius.santana@example.com",
-      "favorite": false
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id43066b7c5d",
@@ -158,7 +159,8 @@
       "first_name": "Camila",
       "last_name": "Araujo",
       "email": "camila.araujo@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "idfcb865ec26",
@@ -166,7 +168,8 @@
       "first_name": "João",
       "last_name": "Souza",
       "email": "joao.souza@example.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id5b572e1f7e",
@@ -174,7 +177,8 @@
       "first_name": "Bruna",
       "last_name": "Lima",
       "email": "bruna.lima@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "idfc1c930a88",
@@ -182,7 +186,8 @@
       "first_name": "Ricardo",
       "last_name": "Oliveira",
       "email": "ricardo.oliveira@example.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id4b89d9ba7d",
@@ -190,7 +195,8 @@
       "first_name": "Isabela",
       "last_name": "Almeida",
       "email": "isabela.almeida@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "ida76c8e96e3",
@@ -198,7 +204,8 @@
       "first_name": "Lucas",
       "last_name": "Ribeiro",
       "email": "lucas.ribeiro@example.com",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id46d99ac13b",
@@ -206,7 +213,8 @@
       "first_name": "Amanda",
       "last_name": "Martins",
       "email": "amanda.martins@example.com",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "idef738b152286c",
@@ -214,7 +222,8 @@
       "first_name": "Baileys",
       "last_name": "Alejo",
       "email": "ba@ileys",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id816a760907448",
@@ -222,7 +231,8 @@
       "first_name": "juanita",
       "last_name": "rondon",
       "email": "jau@gs",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id902fca960320e",
@@ -230,7 +240,8 @@
       "first_name": "salchifrosquis",
       "last_name": "josefin",
       "email": "jose@fin",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id8257a24744c57",
@@ -238,7 +249,8 @@
       "first_name": "hornis",
       "last_name": "trosquis",
       "email": "jo@g",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id08fb5435066bf",
@@ -246,7 +258,8 @@
       "first_name": "hora",
       "last_name": "de dormir",
       "email": "ya@mismo",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id4cbd6e58dd8ae",
@@ -254,7 +267,8 @@
       "first_name": "god is",
       "last_name": "my creator",
       "email": "I@loveyou",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id8df98493c7c89",
@@ -262,7 +276,8 @@
       "first_name": "jeremias",
       "last_name": "nichol",
       "email": "nicho@jere",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id75fb18c7146bb",
@@ -270,7 +285,8 @@
       "first_name": "David Alejandro",
       "last_name": "Rondon Berrio",
       "email": "david@rondon",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "idba3144ba49c19",
@@ -278,7 +294,8 @@
       "first_name": "Baile",
       "last_name": "Firo",
       "email": "Firulay@gmail",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "id67052890f4cef",
@@ -286,7 +303,8 @@
       "first_name": "Nananito",
       "last_name": "tororito",
       "email": "to@ri",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "ide3064c80691d7",
@@ -294,7 +312,8 @@
       "first_name": "Vivir",
       "last_name": "Sabroso",
       "email": "vivir@sa",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "id12f65c2333d14",
@@ -302,7 +321,8 @@
       "first_name": "Vivir",
       "last_name": "Sabroso",
       "email": "Vivir@sa",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "YtHXR1Sgqij7fH6KNMlt6",
@@ -310,7 +330,8 @@
       "first_name": "Jesus",
       "last_name": "Cristo",
       "email": "en@mi",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "kngiv0QYQFj1Og51gA7Ng",
@@ -318,7 +339,8 @@
       "first_name": "Mario",
       "last_name": "Torres",
       "email": "m@rio",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "Sionr10fQtAOyUogR4h1I",
@@ -326,7 +348,8 @@
       "first_name": "Serafine",
       "last_name": "Archangel",
       "email": "sera@gin",
-      "favorite": true
+      "favorite": true,
+      "source": "json_server"
     },
     {
       "id": "YMbda-1TTZh-Pp8IPEBqv",
@@ -334,7 +357,8 @@
       "first_name": "Veranito",
       "last_name": "Sabrosito",
       "email": "vera@no",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
     },
     {
       "id": "hb8LgQ0fSfYValpaDHeb8",
@@ -342,7 +366,62 @@
       "first_name": "Ramiro",
       "last_name": "Portobello",
       "email": "rami@porto",
-      "favorite": false
+      "favorite": false,
+      "source": "json_server"
+    },
+    {
+      "id": "6kJsn3ibPKzdYuCwg_83q",
+      "avatar": "https://ui-avatars.com/api/?name=Pablito%20Clavito&size=150",
+      "first_name": "Pablito",
+      "last_name": "Clavito",
+      "email": "Pa@cla",
+      "favorite": false,
+      "source": "json_server"
+    },
+    {
+      "id": "rioXQVRwDF-jNa3Lha9Qr",
+      "avatar": "https://ui-avatars.com/api/?name=Yolyneira%20Cachinando&size=150",
+      "first_name": "Yolyneira",
+      "last_name": "Cachinando",
+      "email": "yo@ly",
+      "favorite": true,
+      "source": "json_server"
+    },
+    {
+      "id": "R0CR9iIq1D_j_-F9t_5Nx",
+      "avatar": "https://ui-avatars.com/api/?name=Santi%20Rondon&size=150",
+      "first_name": "Santi",
+      "last_name": "Rondon",
+      "email": "san@ron",
+      "favorite": false,
+      "source": "json_server"
+    },
+    {
+      "id": "tNaoVDpuOVLSI4lk9Ny-M",
+      "avatar": "https://ui-avatars.com/api/?name=Azulejo%20Rondon&size=150",
+      "first_name": "Azulejo",
+      "last_name": "Rondon",
+      "email": "Azu@g",
+      "favorite": true,
+      "source": "json_server"
+    },
+    {
+      "id": "hK7pT5zGYPNffcUmHsDJx",
+      "avatar": "https://ui-avatars.com/api/?name=Federico%20Petrierrez&size=150",
+      "first_name": "Federico",
+      "last_name": "Petrierrez",
+      "email": "fe@pe",
+      "favorite": true,
+      "source": "json-server"
+    },
+    {
+      "id": "LI_-Wwtclm8-vVAv0C7v2",
+      "avatar": "https://ui-avatars.com/api/?name=Mitorinita%20dosmil&size=150",
+      "first_name": "Mitorinita",
+      "last_name": "dosmil",
+      "email": "dos@mi",
+      "favorite": false,
+      "source": "json-server"
     }
   ]
 }

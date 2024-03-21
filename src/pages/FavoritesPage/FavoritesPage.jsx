@@ -21,15 +21,7 @@ function FavoritesPage() {
     <section className='OverviewPage content-wrapper'>
       <Spacer />
       <HeadingSection>Favorites</HeadingSection>
-      {contacts && (
-        <ContactsPaginator
-          contacts={contacts.filter(e => {
-            return e.favorite === true
-          })}
-          contactsPerPage={settings.max_contacts_per_page}
-          onPageChange={handlePageChange}
-        />
-      )}
+      {contacts && <ContactsPaginator onlyFavorites onPageChange={handlePageChange} />}
       <CardsContainer>
         {contactsToShow.map((contact, index) => (
           <ContactCard key={index} contactInfo={contact} />

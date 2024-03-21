@@ -21,34 +21,23 @@ const appInfoSlice = createSlice({
   name: 'app_info',
   initialState,
   reducers: {
-    addTask: (state, action) => {
-      let new_task = { id: nanoid(), ...action.payload, done: false }
-      console.log(new_task)
-      state.tasks.push(new_task) // Add a new task to the array
-    },
-    toggleTaskStatus: (state, action) => {
-      const task = state.tasks.find(task => task.id === action.payload)
-      if (task) {
-        task.done = !task.done // Toggle the task's status
-      }
-    },
-    deleteTask: (state, action) => {
-      state.tasks = state.tasks.filter(task => task.id !== action.payload) // Remove the task
-    },
-    resetTasks: state => {
-      state.tasks = [...initialState.tasks] // Clear the tasks array
-    },
     setContacts: (state, action) => {
       state.contacts = [...action.payload]
     },
     addContact: (state, action) => {
-      state.contacts = [...state.contacts, action.payload]
+      state.contacts = [action.payload, ...state.contacts]
     },
     deleteContact: (state, action) => {
       state.contacts = state.contacts.filter(conctact => conctact.id !== action.payload)
     },
+    toggleFavorite: (state, action) => {
+      const contact = state.contacts.find(contact => contact.id === action.payload.id)
+      if (contact) {
+        contact.favorite = !contact.favorite // Toggle the task's status
+      }
+    },
   },
 })
 
-export const { setContacts, addContact, addTask, toggleTaskStatus, deleteTask, resetTasks } = appInfoSlice.actions
+export const { setContacts, addContact, deleteContact, toggleFavorite, addTask, toggleTaskStatus, deleteTask, resetTasks } = appInfoSlice.actions
 export default appInfoSlice.reducer
