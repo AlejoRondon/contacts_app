@@ -49,14 +49,12 @@ const appInfoSlice = createSlice({
 // Middleware to manage contacts in session storage
 const updateSessionStorageMiddleware = store => next => action => {
   const result = next(action) // Pass the action to the next middleware in chain
-  if (action.type === 'app_info/toggleFavorite') {
-    console.log('updateSessionStorageMiddleware app_info/toggleFavorite', action.payload)
-    if (action.payload.source === 'api_reqres') {
+  if (action.payload.source === 'api_reqres') {
+    if (action.type === 'app_info/toggleFavorite') {
+      console.log('updateSessionStorageMiddleware app_info/toggleFavorite', action.payload)
       saveToSessionStorage('reqres_favorites', store.getState().app_info.reqres_favorites)
-    }
-  } else if (action.type === 'app_info/deleteContact') {
-    console.log('updateSessionStorageMiddleware app_info/deleteContact', action.payload)
-    if (action.payload.source === 'api_reqres') {
+    } else if (action.type === 'app_info/deleteContact') {
+      console.log('updateSessionStorageMiddleware app_info/deleteContact', action.payload)
       saveToSessionStorage('reqres_favorites', store.getState().app_info.reqres_favorites)
       saveToSessionStorage('reqres_deleted', store.getState().app_info.reqres_deleted)
     }
@@ -65,21 +63,18 @@ const updateSessionStorageMiddleware = store => next => action => {
 }
 
 // Middleware to manage contacts in JSON-Server DB
-const updateJsonServerDbMiddleware = store => next => action => {
+const updateJsonServerDbMiddleware = () => next => action => {
   const result = next(action) // Pass the action to the next middleware in chain
-  if (action.type === 'app_info/toggleFavorite') {
-    console.log('updateJsonServerDbMiddleware app_info/toggleFavorite', action.payload)
-    if (action.payload.source === 'json_server') {
+  if (action.payload.source === 'json_server') {
+    if (action.type === 'app_info/toggleFavorite') {
+      console.log('updateJsonServerDbMiddleware app_info/toggleFavorite', action.payload)
+
       updateContactDB(action.payload.id, { ...action.payload, favorite: !action.payload.favorite })
-    }
-  } else if (action.type === 'app_info/deleteContact') {
-    console.log('updateJsonServerDbMiddleware app_info/deleteContact', action.payload)
-    if (action.payload.source === 'json_server') {
+    } else if (action.type === 'app_info/deleteContact') {
+      console.log('updateJsonServerDbMiddleware app_info/deleteContact', action.payload)
       deleteContactDB(action.payload.id)
-    }
-  } else if (action.type === 'app_info/addContact') {
-    console.log('updateJsonServerDbMiddleware app_info/addContact', action.payload)
-    if (action.payload.source === 'json_server') {
+    } else if (action.type === 'app_info/addContact') {
+      console.log('updateJsonServerDbMiddleware app_info/addContact', action.payload)
       createNewContactDB(action.payload)
     }
   }
