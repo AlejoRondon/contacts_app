@@ -21,7 +21,7 @@ function ContactsPage() {
       <ContactsPaginator onPageChange={handlePageChange} />
       <CardsContainer>
         {contactsToShow.map((contact, index) => (
-          <ContactCard key={index} contactInfo={contact} />
+          <ContactCard buttonsConfig={{ favBtnConfig: true, delBtnConfig: true }} key={index} contactInfo={contact} />
         ))}
       </CardsContainer>
     </section>

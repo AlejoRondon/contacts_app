@@ -5,6 +5,8 @@ import axios from 'axios'
 const API_BASE_URL = 'http://localhost:3001' // Adjust the base URL as needed
 
 export async function fetchAllContactsDB() {
+  console.log('Fetching all contacts from the JSON-Server DB')
+
   try {
     const response = await axios.get(`${API_BASE_URL}/contacts`)
     return response.data
@@ -15,6 +17,8 @@ export async function fetchAllContactsDB() {
 }
 
 export async function fetchContactDB(contactId) {
+  console.log('Fetching contact from the JSON-Server DB')
+
   try {
     const response = await axios.get(`${API_BASE_URL}/contacts/${contactId}`)
     return response.data
@@ -25,6 +29,8 @@ export async function fetchContactDB(contactId) {
 }
 
 export async function createNewContactDB(contact) {
+  console.log('Adding contact to the JSON-Server DB')
+
   try {
     const response = await axios.post(`${API_BASE_URL}/contacts`, contact, {
       headers: {
@@ -44,6 +50,8 @@ export async function createNewContactDB(contact) {
 }
 
 export async function updateContactDB(contactId, updatedData) {
+  console.log('Updating contact JSON-Server DB')
+
   try {
     const response = await axios.put(`${API_BASE_URL}/contacts/${contactId}`, updatedData, {
       headers: {
@@ -63,6 +71,8 @@ export async function updateContactDB(contactId, updatedData) {
 }
 
 export async function deleteContactDB(contactId) {
+  console.log('Deleting contact from the JSON-Server DB')
+
   try {
     const response = await axios.delete(`${API_BASE_URL}/contacts/${contactId}`)
 

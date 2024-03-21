@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faHeart, faX } from '@fortawesome/free-solid-svg-icons'
 import { RedButton, GreenButton } from '../Buttons/Buttons'
 import { useDispatch } from 'react-redux'
-import { deleteContact, toggleFavorite } from '../../redux/appInfoSlice'
+import { deleteContact, toggleFavorite } from '../../redux-TK/appInfoSlice'
 import { updateContactDB, deleteContactDB } from '../../services/json-server/db_services'
 
 function ContactCard({ contactInfo }) {
@@ -14,13 +14,11 @@ function ContactCard({ contactInfo }) {
 
   const handleFavoriteClick = async (e, id) => {
     console.log('favorite toggled', id)
-    dispatch(toggleFavorite({ id }))
-    if (contactInfo.source === 'json_server') updateContactDB(contactInfo.id, { ...contactInfo, favorite: !contactInfo.favorite })
+    dispatch(toggleFavorite(contactInfo))
   }
   const handleRemoveClick = async (e, id) => {
     console.log('Remove ', id)
-    dispatch(deleteContact(id))
-    if (contactInfo.source === 'json_server') deleteContactDB(contactInfo.id)
+    dispatch(deleteContact(contactInfo))
   }
 
   const RemoveButton = props => (
@@ -47,6 +45,7 @@ function ContactCard({ contactInfo }) {
         <ContactCardImage className={`${contactInfo.favorite ? 'favorite' : ''}`} img_url={contactInfo.avatar}></ContactCardImage>
         <span className='fullname'>{`${contactInfo.first_name} ${contactInfo.last_name}`}</span>
         <span className='email'>{contactInfo.email}</span>
+        <span className='source'>{contactInfo.source}</span>
         <hr></hr>
         <div className={`buttons-container`}>
           <FavoriteButton

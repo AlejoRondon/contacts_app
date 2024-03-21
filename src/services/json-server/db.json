@@ -404,24 +404,6 @@
       "email": "Azu@g",
       "favorite": true,
       "source": "json_server"
-    },
-    {
-      "id": "hK7pT5zGYPNffcUmHsDJx",
-      "avatar": "https://ui-avatars.com/api/?name=Federico%20Petrierrez&size=150",
-      "first_name": "Federico",
-      "last_name": "Petrierrez",
-      "email": "fe@pe",
-      "favorite": true,
-      "source": "json-server"
-    },
-    {
-      "id": "LI_-Wwtclm8-vVAv0C7v2",
-      "avatar": "https://ui-avatars.com/api/?name=Mitorinita%20dosmil&size=150",
-      "first_name": "Mitorinita",
-      "last_name": "dosmil",
-      "email": "dos@mi",
-      "favorite": false,
-      "source": "json-server"
     }
   ]
 }

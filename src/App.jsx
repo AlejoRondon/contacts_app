@@ -12,24 +12,23 @@ import ContactForm from './component/ContactForm/ContactForm'
 import ContactModal from './component/ContactModal/ContactModal'
 import generateAvatarUrl from './services/avatar'
 import reqrest from './services/reqres'
-import { createNewContactDB, fetchAllContactsDB } from './services/json-server/db_services'
+import { fetchAllContactsDB } from './services/json-server/db_services'
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { setContacts, addContact } from './redux/appInfoSlice'
+import { setContacts, addContact } from './redux-TK/appInfoSlice'
 import { nanoid } from '@reduxjs/toolkit'
 import { useState } from 'react'
 
 function Layout() {
   const dispatch = useDispatch()
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const handleModal = value => {
     setIsModalOpen(value)
   }
 
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-    let new_contact = { id: nanoid(), avatar: generateAvatarUrl(values.first_name, values.last_name), ...values, source: 'json-server' }
-    createNewContactDB(new_contact)
+    let new_contact = { id: nanoid(), avatar: generateAvatarUrl(values.first_name, values.last_name), ...values, source: 'json_server' }
     dispatch(addContact(new_contact))
     setSubmitting(false)
     resetForm()
@@ -42,6 +41,7 @@ function Layout() {
         onNewContactBtnClick={() => {
           handleModal(true)
         }}></TopHeader>
+
       <ContactModal isOpen={isModalOpen} onClose={() => handleModal(false)}>
         <ContactForm onSubmit={handleSubmit}></ContactForm>
       </ContactModal>
@@ -54,6 +54,9 @@ function Layout() {
 
 function App() {
   const contacts = useSelector(state => state.app_info.contacts)
+  const reqres_favorites = useSelector(state => state.app_info.reqres_favorites)
+  const reqres_deleted = useSelector(state => state.app_info.reqres_deleted)
+
   console.log('Contacts from <app>: ', contacts)
   const dispatch = useDispatch()
 
@@ -63,11 +66,15 @@ function App() {
       try {
         let response = await reqrest.get(`/?page=1`)
         let contacts_reqres = response.data.data
-
         response = await reqrest.get(`/?page=2`)
         contacts_reqres = [...contacts_reqres, ...response.data.data]
+
+        // Filter out objects with IDs present in reqres_deleted
+        contacts_reqres = contacts_reqres.filter(obj => !reqres_deleted.includes(obj.id))
+
+        console.log("reqres_favorites",reqres_favorites)
         contacts_reqres = contacts_reqres.map((e)=>{
-          return {...e, 'favorite': false, source : 'api_reqres'}  // adding favorite field
+          return {...e, 'favorite': reqres_favorites.includes(e.id)? true:false, source : 'api_reqres'}  // adding favorite field
         })
 
         let contacts_json_server = await fetchAllContactsDB()
@@ -77,7 +84,7 @@ function App() {
         console.error('Error fetching pokemons information:', error)
       }
     })()
-  }, [dispatch])
+  }, [])
 
   return (
     <BrowserRouter>
